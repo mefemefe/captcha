@@ -65,16 +65,16 @@ function verify() {
   } else {
     resultMsg.textContent = `\u2717 Try again...`;
     resultMsg.className = 'result-msg fail';
-    // // flash wrong
-    // extra.forEach(idx => {
-    //   const t = grid.querySelector(`[data-idx="${idx}"]`);
-    //   if (t) { t.style.outline = '3px solid #e57373'; setTimeout(()=>t.style.outline='', 900); }
-    // });
-    // // reveal missed
-    // missed.forEach(idx => {
-    //   const t = grid.querySelector(`[data-idx="${idx}"]`);
-    //   if (t) { t.style.outline = '3px solid #ffb74d'; setTimeout(()=>t.style.outline='', 900); }
-    // });
+    // flash wrong
+    extra.forEach(idx => {
+      const t = grid.querySelector(`[data-idx="${idx}"]`);
+      if (t) { t.style.outline = '3px solid #e57373'; setTimeout(()=>t.style.outline='', 900); }
+    });
+    // reveal missed
+    missed.forEach(idx => {
+      const t = grid.querySelector(`[data-idx="${idx}"]`);
+      if (t) { t.style.outline = '3px solid #ffb74d'; setTimeout(()=>t.style.outline='', 900); }
+    });
   }
 }
 
