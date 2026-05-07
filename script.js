@@ -11,6 +11,18 @@ const PRESETS = [
   { label:"Bow", topic:"bow",
     img:"static/bow.png", correct:[0,1,2,3,4,5,6,7,8],
     msg: "Please only select the bow" },
+    { label: "Ring", topic: "ring",
+      img: "static/ring.png", correct: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      msg: "Please only select the ring" },
+    { label: "Zebra", topic: "zebra crossing",
+      img: "static/zebra.jpg", correct: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      msg: "Do you know what a zebra crossing is?" },
+    { label: "Seal", topic: "seal",
+      img: "static/seal.png", correct: [2, 3, 4, 5, 6, 7, 8],
+      msg: "I don't know how I could make these any easier..."},
+    { label: "Crane", topic: "crane",
+      img: "static/crane.png", correct: [0, 1, 2, 3, 5, 6, 7, 8],
+      msg: "You're not good at this..." },
 ];
 
 let currentPreset = PRESETS[0];
